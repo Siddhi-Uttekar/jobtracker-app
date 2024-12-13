@@ -6,7 +6,7 @@ const App = () => {
   const [showForm, setShowForm] = useState(false);
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div className='p-10'>
       <h1>Job Tracker</h1>
       <button onClick={() => setShowForm(!showForm)}>
         {showForm ? 'Close Form' : 'Add Job'}
