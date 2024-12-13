@@ -8,8 +8,9 @@ const App = () => {
   return (
     <div className='p-10'>
       <h1>Job Tracker</h1>
-      <button onClick={() => setShowForm(!showForm)}>
-        {showForm ? 'Close Form' : 'Add Job'}
+      <button className='bg-green-700 p-4 rounded-lg text-white font-bold ml-4 px-5'
+      onClick={() => setShowForm(!showForm)}>
+        {showForm ? 'Close Form' : 'Add a New Job'}
       </button>
       {showForm && <JobForm toggleForm={setShowForm} />}
       <JobList />

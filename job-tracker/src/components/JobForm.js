@@ -27,7 +27,7 @@ const JobForm = ({ toggleForm }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="p-4 bg-white rounded-lg shadow-md space-y-4">
+    <form onSubmit={handleSubmit} className="p-4 bg-white rounded-lg shadow-md flex justify-evenly">
       <div>
         <label htmlFor="position" className="block text-sm font-medium text-gray-700">Job Position</label>
         <input
@@ -37,7 +37,7 @@ const JobForm = ({ toggleForm }) => {
           placeholder="Job Position"
           value={formData.position}
           onChange={handleChange}
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-md  sm:text-sm"
           required
         />
       </div>
@@ -51,7 +51,7 @@ const JobForm = ({ toggleForm }) => {
           placeholder="Company"
           value={formData.company}
           onChange={handleChange}
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-md "
           required
         />
       </div>
@@ -65,7 +65,7 @@ const JobForm = ({ toggleForm }) => {
           placeholder="Location"
           value={formData.location}
           onChange={handleChange}
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm sm:text-sm"
           required
         />
       </div>
@@ -79,7 +79,7 @@ const JobForm = ({ toggleForm }) => {
           placeholder="Salary"
           value={formData.salary}
           onChange={handleChange}
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm  sm:text-sm"
         />
       </div>
 
@@ -89,10 +89,10 @@ const JobForm = ({ toggleForm }) => {
           name="status"
           type="text"
           id="status"
-          placeholder="Status (e.g., Applied/Interview)"
+          placeholder="(e.g., Applied/Interview)"
           value={formData.status}
           onChange={handleChange}
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm  sm:text-sm"
         />
       </div>
 
@@ -104,7 +104,7 @@ const JobForm = ({ toggleForm }) => {
           id="dateApplied"
           value={formData.dateApplied}
           onChange={handleChange}
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm sm:text-sm"
         />
       </div>
 
@@ -116,19 +116,18 @@ const JobForm = ({ toggleForm }) => {
           id="followUp"
           value={formData.followUp}
           onChange={handleChange}
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+          className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm sm:text-sm"
         />
       </div>
 
       <button
         type="submit"
-        className="w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        className="w-32 h-14 mt-2 bg-green-500 text-white font-semibold rounded-md shadow-md hover:bg-green-600"
       >
-        Add Job
+        Add New Job
       </button>
     </form>
   );
 };
 
 export default JobForm;
-

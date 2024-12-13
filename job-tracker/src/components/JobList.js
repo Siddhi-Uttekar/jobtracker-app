@@ -8,8 +8,8 @@ const JobList = () => {
 
   return (
     <div className="p-4">
-      <table className="min-w-full border border-gray-300 text-left bg-white rounded-lg shadow-md">
-        <thead className="bg-gray-100">
+      <table className="min-w-full border border-gray-400 text-left bg-white rounded-lg shadow-md">
+        <thead className="bg-gray-200">
           <tr>
             <th className="px-4 py-2 border border-gray-300">Position</th>
             <th className="px-4 py-2 border border-gray-300">Company</th>
@@ -61,4 +61,3 @@ const JobList = () => {
 };
 
 export default JobList;
-
