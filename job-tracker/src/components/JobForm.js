@@ -29,15 +29,16 @@ const JobForm = ({ toggleForm }) => {
   return (
     <form onSubmit={handleSubmit} className="p-4 bg-white rounded-lg shadow-md flex justify-evenly">
       <div>
-        <label htmlFor="position" className="block text-sm font-medium text-gray-700">Job Position</label>
+        <label htmlFor="position" className="block text-sm font-medium text-gray-700 ">Job Position</label>
         <input
+
           name="position"
           type="text"
           id="position"
           placeholder="Job Position"
           value={formData.position}
           onChange={handleChange}
-          className="mt-1 block w-full p-2 border border-gray-300 rounded-md  sm:text-sm"
+          className="mt-1 block w-full p-2 border border-gray-700 rounded-md  sm:text-sm"
           required
         />
       </div>
@@ -121,10 +122,11 @@ const JobForm = ({ toggleForm }) => {
       </div>
 
       <button
+
         type="submit"
         className="w-32 h-14 mt-2 bg-green-500 text-white font-semibold rounded-md shadow-md hover:bg-green-600"
       >
-        Add New Job
+        Add  New Job
       </button>
     </form>
   );

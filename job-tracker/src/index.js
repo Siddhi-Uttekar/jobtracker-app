@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client'; // Import ReactDOM from 'react-dom/client'
-import './index.css';
-import App from './App';
-import { Provider } from 'react-redux';
-import { store } from './redux/store';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux"; // Redux Provider
+import { store } from "./redux/store"; // Redux store
+import { AuthProvider } from "./contexts/AuthContext"; // Firebase Auth context provider
+import App from "./App";
+import './index.css'; // Ensure this points to the correct path
 
-// Use createRoot instead of render
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <Provider store={store}>  {/* Wrap App with Redux provider */}
+    <AuthProvider>           {/* Wrap App with Auth provider */}
       <App />
-    </Provider>
-  </React.StrictMode>
+    </AuthProvider>
+  </Provider>
 );
