@@ -10,12 +10,12 @@ import {getAuth} from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+  authDomain: 'job-tracker-5e095.firebaseapp.com', // Directly in the code
+  projectId: 'job-tracker-5e095', // Directly in the code
+  storageBucket: 'job-tracker-5e095.firebasestorage.app', // Directly in the code
+  messagingSenderId: '38501972508', // Directly in the code
+  appId: '1:38501972508:web:35fa2134abdeb9a90f7dd9', // Directly in the code
+  measurementId: 'G-RR3Y2YDV7M', // Directly in the code
 };
 
 // Initialize Firebase
