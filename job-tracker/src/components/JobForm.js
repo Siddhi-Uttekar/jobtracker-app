@@ -5,6 +5,7 @@ import { addJob } from '../redux/jobslice';
 const JobForm = ({ toggleForm }) => {
   const [formData, setFormData] = useState({
     position: '',
+    description: '',
     company: '',
     location: '',
     salary: '',
@@ -37,6 +38,21 @@ const JobForm = ({ toggleForm }) => {
           id="position"
           placeholder="Job Position"
           value={formData.position}
+          onChange={handleChange}
+          className="mt-1 block w-full p-2 border border-gray-700 rounded-md  sm:text-sm"
+          required
+        />
+      </div>
+
+      <div>
+        <label htmlFor="description" className="block text-sm font-medium text-gray-700 ">Job Description</label>
+        <input
+
+          name="description"
+          type="text"
+          id="description"
+          placeholder="Job Description"
+          value={formData.description}
           onChange={handleChange}
           className="mt-1 block w-full p-2 border border-gray-700 rounded-md  sm:text-sm"
           required
