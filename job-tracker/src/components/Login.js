@@ -4,6 +4,7 @@ import { auth } from "../utils/firebase";
 import { checkValidata } from "../utils/validate"; // Custom validation function
 import { useNavigate } from "react-router-dom";
 
+
 const Login = () => {
     const navigate = useNavigate();
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -44,6 +45,8 @@ const Login = () => {
           email.current.value,
           password.current.value
         );
+
+
         console.log("Sign In successful:", userCredential.user);
         setErrorMessage("Sign In successful! Redirecting...");
         navigate("/jobs");
@@ -63,7 +66,8 @@ const Login = () => {
   };
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-hidden bg-cover  bg-no-repeat  "
+    style={{ backgroundImage: "url('/jobTracker-.png')" }}>
 
       <div className="absolute inset-0"></div>
       <div className="flex items-center justify-center min-h-screen relative z-10">

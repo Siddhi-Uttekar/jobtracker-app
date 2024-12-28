@@ -19,7 +19,7 @@ const Header = ({ user }) => {
   if (!user) return null; // Don't render Header if user is not logged in
 
   return (
-    <header className="flex justify-between items-center p-4 bg-black text-white">
+    <header className="flex justify-between items-center p-4 bg-black text-white ">
       <h1 className="text-3xl font-serif font-bold cursor-pointer" onClick={() => navigate("/jobs")}>
         JobTracker
       </h1>
