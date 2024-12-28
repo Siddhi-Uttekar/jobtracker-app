@@ -67,7 +67,7 @@ const Login = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-cover  bg-no-repeat  "
-    style={{ backgroundImage: "url('/jobTracker-.png')" }}>
+    style={{ backgroundImage: "url('/JobTracker-.png')" }}>
 
       <div className="absolute inset-0"></div>
       <div className="flex items-center justify-center min-h-screen relative z-10">
