@@ -90,13 +90,13 @@ const toggleDescription = (id) => {
                 <td className="px-4 py-2 border border-gray-300 space-x-2">
                   <button
                     onClick={() => handleEditClick(job)}
-                    className="px-2 py-1 m-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                    className="px-2 py-1 m-2 bg-green-500 text-white rounded hover:bg-green-600"
                   >
                     Edit
                   </button>
                   <button
                     onClick={() => dispatch(removeJob(job.id))}
-                    className="px-2 py-1 bg-red-500 text-white rounded hover:bg-red-600"
+                    className="px-2 py-1 bg-red-600 text-white rounded hover:bg-red-700"
                   >
                     Delete
                   </button>
@@ -210,7 +210,7 @@ const toggleDescription = (id) => {
                 </button>
                 <button
                   onClick={handleSaveChanges}
-                  className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                  className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
                 >
                   Save
                 </button>
