@@ -14,8 +14,14 @@ const jobSlice = createSlice({
     removeJob: (state, action) => {
       state.jobList = state.jobList.filter(job => job.id !== action.payload);
     },
+    editJob: (state, action) => {
+      const index = state.jobList.findIndex((job) => job.id === action.payload.id);
+      if (index !== -1) {
+        state.jobList[index] = action.payload;
+      }
+    },
   },
 });
 
-export const { addJob, removeJob } = jobSlice.actions;
+export const { addJob, removeJob, editJob } = jobSlice.actions;
 export default jobSlice.reducer;
